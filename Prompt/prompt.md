@@ -1,4 +1,4 @@
-# MERN Airbnb Clone
+# Prompt
 
 ## Context and Role
 
@@ -10,7 +10,7 @@ Make it using MERN.
 
 ---
 
-## The application shall:
+## Objective:
 
 ● Enable user registration and login using JWT authentication  
 ● Enable users to create, update, delete and manage property listings  
