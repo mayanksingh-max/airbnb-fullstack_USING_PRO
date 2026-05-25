@@ -1,213 +1,219 @@
-# Prompt
+# MERN Airbnb Clone
 
 ## Context and Role
 
-As a Frontend Developer specializing in modern web experiences, you are responsible for designing and implementing a high-performance personal portfolio website. The website must use Framer Motion to create immersive, scroll-based storytelling animations while maintaining responsiveness, accessibility, and production-level quality.
+As a Full Stack MERN Developer, you will be creating, building and deploying a production ready web application clone of Airbnb with modern UI / UX, scalable backend architecture, secure authentication and high performance.
 
-The portfolio should present projects, skills, and experience in a narrative-driven format that guides visitors through a smooth visual journey. Additionally, the system must include a secure and functional contact mechanism that collects user information and triggers an email notification to the site owner.
+The app must provide a seamless property booking experience allowing users to browse rental listings, search properties, book stays, manage reservations, upload property images and interact with the platform securely. The project should be implemented in a real-world software engineering fashion and have a full implementation of frontend and backend.
 
-## Objective
+Make it using MERN.
 
-Develop a complete full-stack portfolio website that:
+---
 
-Implements scroll-based storytelling animations using Framer Motion.
+## The application shall:
 
-Provides a modern, responsive UI with smooth transitions.
+● Enable user registration and login using JWT authentication  
+● Enable users to create, update, delete and manage property listings  
 
-Includes a “Get in Touch” button that opens a contact form modal.
+● Provide full booking & reservation system  
+● Property listing image uploads support with Cloudinary & Multer  
+● Provide a modern, responsive and good looking UI  
+● Provide admin dashboard and management capabilities  
+● Follow production level coding, security and performance practices  
+● Ensure scalability, responsiveness and optimized API performance  
 
-Logs user submissions securely.
+---
 
-Triggers an email to the portfolio owner with the submitted details.
+# UI and Frontend Requirements
 
-## UI and Animation Requirements
+## Modern Airbnb-Style UI
 
-### Scroll-Based Storytelling
+The frontend should include:
 
-Implement scroll-triggered animations using Framer Motion.
+● Clean and modern Airbnb-inspired design  
+● Responsive layouts for mobile, tablet, and desktop devices  
+● Smooth transitions and hover animations  
+● Reusable React components  
+● Modern cards, buttons, and navigation system  
+● Interactive UI elements with optimized rendering  
+● Loading skeletons and fallback states  
 
-Use parallax effects, fade-ins, and staggered transitions.
+---
 
-Animate sections sequentially to create a narrative flow.
+## Pages and Features
 
-Include smooth transitions between:
+The application should include:
 
-Hero Section
+● Home page with featured listings  
+● Property details page  
+● Search and filter page  
+● Login and registration pages  
+● User dashboard  
+● Admin dashboard  
+● Booking history page  
+● Wishlist or favorites page  
+● Add/Edit property page  
+● Reviews and ratings section  
 
-About Section
+---
 
-Skills Section
+## Frontend Technical Requirements
 
-Projects Section
+● Use React.js for frontend development  
+● Use React Router DOM for routing  
+● Use Tailwind CSS or equivalent styling solution  
+● Use Axios for API handling  
+● Use Context API or Redux Toolkit for state management  
+● Implement lazy loading where required  
+● Optimize frontend performance and rendering  
 
-Contact Section
+---
 
-Ensure animations:
+# Backend Requirements
 
-Are performant (avoid layout thrashing)
+The backend should:
 
-Use GPU-friendly properties (transform, opacity)
+● Use Node.js and Express.js  
+● Use MongoDB with Mongoose  
+● Implement JWT authentication and authorization  
+● Securely hash passwords using bcrypt  
+● Create secure REST APIs  
+● Include middleware for authentication and role-based access  
+● Implement centralized error handling and validation  
+● Use environment variables securely with dotenv  
 
-Do not block scroll performance
+---
 
-## Layout Requirements
+# Database Requirements
 
-The portfolio must include:
+Create models for:
 
-Hero section with animated introduction
+● Users  
+● Properties/Listings  
+● Bookings  
+● Reviews  
+● Wishlist/Favorites  
 
-About section with animated text reveal
+---
 
-Skills section with animated progress indicators
+# Booking System Requirements
 
-Projects section with hover interactions and motion transitions
+The booking system should:
 
-Call-to-action section with “Get in Touch” button
+● Allow users to select check-in and check-out dates  
+● Prevent double booking conflicts  
+● Store booking history securely  
+● Allow booking cancellation  
+● Automatically calculate total booking price  
+● Validate property availability before booking confirmation  
 
-The layout must be:
+---
 
-Fully responsive (mobile, tablet, desktop)
+# Image Upload Requirements
 
-Accessible (ARIA labels, semantic HTML)
+● Support multiple image uploads  
+● Use Cloudinary or equivalent cloud storage service  
+● Optimize uploaded images for faster loading and performance  
+● Preview uploaded images on frontend  
 
-Optimized for performance
+---
 
-## Contact System Requirements
+# Search and Filter Requirements
 
-### Modal Behavior
+Implement advanced filtering based on:
 
-Clicking the “Get in Touch” button must:
+● Location  
+● Price range  
+● Ratings  
+● Property category  
+● Availability dates  
 
-Open a modal contact form
+---
 
-Animate modal entrance and exit using Framer Motion
+# Security Requirements
 
-### Contact Form Fields
+The application must include:
 
-Name (required)
+● JWT-based authentication  
+● Protected routes  
+● Role-based authorization  
+● API rate limiting  
+● Helmet security middleware  
+● XSS protection  
+● MongoDB injection prevention  
+● Secure password hashing  
+● Input validation and sanitization  
+● Secure API handling  
 
-Email (required, validated)
+---
 
-Phone Number (required, validated)
+# Performance and Scalability
 
-Message (optional)
+Optimize the application using:
 
-### Validation
+● Pagination for large datasets  
+● Lazy loading  
+● Code splitting  
+● Optimized database queries  
+● Image optimization  
+● Reusable modular architecture  
+● Optimized API performance for high traffic  
 
-Client-side validation with proper error messages.
+---
 
-Prevent submission if required fields are invalid.
+# Deployment Requirements
 
-## Backend Requirements
+Provide deployment instructions for:
 
-Implement an API endpoint to handle form submissions.
+● Frontend deployment using Vercel or Netlify  
+● Backend deployment using Render or Railway  
+● MongoDB Atlas configuration  
+● Environment variable setup  
+● Production build optimization  
 
-Securely log submissions in:
+---
 
-Server logs
+# Implementation Requirements
 
-Optional database (e.g., MongoDB or PostgreSQL)
+Generate actual working code instead of only explanations.
 
-Trigger an email to the portfolio owner containing:
+The response should include:
 
-Name
+● Complete frontend and backend folder structure  
+● React pages and reusable components  
+● REST API routes and controllers  
+● Authentication logic  
+● Booking system implementation  
+● Cloudinary image upload implementation  
+● Database models and schemas  
+● Middleware implementation  
+● Validation and error handling  
+● Deployment configuration and setup instructions  
 
-Email
+---
 
-Phone number
+# Coding Rules
 
-Message
+● Use clean and modular architecture  
+● Use async/await properly  
+● Follow production-level coding standards  
+● Use reusable components and middleware  
+● Add comments only where necessary  
+● Use proper naming conventions  
+● Avoid pseudocode or incomplete implementation  
 
-Timestamp
+---
 
-Use a secure email service (e.g., Nodemailer with SMTP or transactional email API).
+# Output Requirements
 
-Store credentials securely using environment variables.
+The final output should include:
 
-Prevent spam using basic rate limiting or CAPTCHA integration.
-
-## Data Processing Requirements
-
-Sanitize all inputs to prevent:
-
-XSS attacks
-
-Injection attacks
-
-Validate email format properly.
-
-Ensure API returns structured JSON responses:
-
-Success message
-
-Error message (if applicable)
-
-## Output Requirements
-
-Smooth animated storytelling portfolio.
-
-Functional modal contact form.
-
-Email notification successfully triggered upon submission.
-
-Confirmation message shown to user after successful submission.
-
-Graceful error handling if email fails.
-
-## Error Handling and Documentation
-
-Handle frontend form errors gracefully.
-
-Handle backend validation errors.
-
-Provide structured error responses.
-
-Log backend failures appropriately.
-
-Document:
-
-Folder structure
-
-Setup instructions
-
-Environment variable configuration
-
-Deployment steps
-
-## Performance and Scalability
-
-Optimize bundle size.
-
-Lazy-load heavy components.
-
-Ensure animations do not degrade performance.
-
-Support high traffic without API bottlenecks.
-
-Use proper debouncing for user interactions.
-
-Ensure accessibility and SEO optimization.
-
-## Technology Stack
-
-Use the following:
-
-### Frontend:
-
-React (or Next.js)
-
-Framer Motion
-
-Tailwind CSS (or equivalent styling solution)
-
-### Backend:
-
-Node.js + Express (or Next.js API routes)
-
-Nodemailer (or equivalent email service)
-
-dotenv for environment configuration
-
-### Optional:
-
-MongoDB or PostgreSQL for storing submissions
+● Complete frontend and backend implementation  
+● Folder structure  
+● Responsive Airbnb-style UI  
+● Authentication and authorization system  
+● Booking workflow  
+● Admin functionality  
+● Search and filtering system  
+● Deployment guidance  
+● Production-ready executable code  
